@@ -43,25 +43,27 @@ ul {
 
 /* Clients list */
 
-.clients {
-  h2 {
-    color: @color-4;
-  }
+#clients {
   ul {
     font-size: 32px;
     font-weight: 400;
     text-align: center;
+	display: table;
+	margin: 0 auto;		
   }
   li {
-    background: @color-2 ;
-    width: 220px;
-    padding: 15px!important;
-    margin-bottom: 10px;
-    .transition(background 0.6s );
+    background: #FFF;
+    padding: 10px!important;
+    margin: 4px;
+    .transition(background 0.8s );
     &:hover { 
       cursor: pointer;
-      background: darken(@color-2, 20%);
+      background: darken(@color-3, 10%);
     }
+	img {
+		width: 100px;		
+		height: 100px;
+	}
   }
 }
 
