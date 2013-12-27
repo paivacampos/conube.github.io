@@ -1,234 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Conube - Sua contabilidade online</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
-  <meta name="description" content="Conube | Sua contabilidade online">
+	<title>Conube - Sua contabilidade online</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="description" content="Conube | Sua contabilidade online">
 
-  <!-- Load The Story -->
-  <link id="the-story-css-file"href="css/main.css" rel="stylesheet" media="screen">
+	<!-- Load The Story -->
+	<link id="css-file" href="css/holerite.css" rel="stylesheet" media="screen">
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="img/favicon.ico">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/favicon.ico">
 
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
       <script src="/js/html5shiv.js"></script>
       <script src="/js/respond.min.js"></script>
       <![endif]-->
-  <meta http-equiv=X-UA-Compatible content=IE=edge>    
+	<meta http-equiv=X-UA-Compatible content=IE=edge>
 </head>
 
 <!-- activate scrollspy -->
 
 <body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="navbar-container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Mudar navegação</span>
-          <i class="fa fa-bars"></i>
-        </button>
-        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Conube"/></a> 
-      </div>
-      <div id="nav-collapse" class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a title="Home page" class="scroll brand-1" href="#home">Home</a></li>
-          <li><a title="Serviços que vão ajudar você" href="#features" class=" scroll brand-4">Funcionalidades</a></li>
-          <li><a title="Serviços que vão ajudar você" href="#clients" class=" scroll brand-3">Clientes</a></li>
-          <li><a title="Entre em contato!" href="#contact" class="scroll brand-2">Contato</a></li>
-          <li><a title="Nosso holerite online" href="holerite.html">Holerite Online</a></li>
-        </ul>
-      </div>
-    </div><!-- /.navbar-container -->
-  </nav>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="navbar-container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Mudar navegação</span>
+					<i class="fa fa-bars"></i>
+				</button>
+				<a class="navbar-brand" href="#">
+					<img src="img/logo.png" alt="Conube" />
+				</a>
+			</div>
+			<div id="nav-collapse" class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active">
+						<a title="Home page" class="scroll brand-1" href="#home">Home</a>
+					</li>
+					<li>
+						<a title="Serviços que vão ajudar você" href="#features" class=" scroll brand-4">Funcionalidades</a>
+					</li>
+					<li>
+						<a title="Serviços que vão ajudar você" href="#clients" class=" scroll brand-3">Clientes</a>
+					</li>
+					<li>
+						<a title="Entre em contato!" href="#contact" class="scroll brand-2">Solicitar proposta</a>
+					</li>
+					<li>
+						<a title="Meu holerite online" href="http://hol.conube.com.br/login">Login</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /.navbar-container -->
+	</nav>
 
-  <!-- Home Page -->
-  <div id="home" class="page color-1">
-    <div class="inner-page">
-      <h2 class="page-headline large">Sua Empresa com Holerite Online</h2>
-    </div>
-    <div class="row inner-page">
-      <div class="col-md-8 col-md-push-4 lazy-container">
-        <img class="lazy" alt="Fica ótimo em qualquer aparelho." src="img/pixel.png" data-original="img/home.png" />
-      </div>
-      <div class="col-md-4 col-md-pull-8">
-        <ul class="big-list">
-          <li><i class="fa fa-arrow-down"></i> Custos reduzidos</li>
-          <li><i class="fa fa-thumbs-o-up"></i> Mais tempo livre</li>
-          <li><i class="fa fa-shield"></i> Mais segurança</li>
-          <li><i class="fa fa-cloud"></i> Simples e fácil</li>
-        </ul>
-        <br />
-        <a href="#features" title="Veja mais funcionalidades!" class="scroll btn btn-primary btn-centered"><i class="fa fa-caret-down"></i> Saiba mais</a>
-      </div>
-    </div>
-  </div> <!-- /#home -->
-
-  <!-- Sign up -->
-  <div class="sign-up color-2 visible-lg">
-    <div class="row inner-page">
-      <div class="col-md-12">
-        <h4 class="pull-left">Mais agilidade, segurança e sustentabilidade para sua empresa.</h4>
-        <a href="#features" class="scroll btn btn-primary pull-right" title="Check out more freatures!"><i class="fa fa-caret-down"></i> Saiba mais</a>
-      </div>
-    </div>
-  </div> <!-- /.sign-up -->
-
-  <!-- Feature page-->
-  <div id="features" class="page color-4">
-    <div class="inner-page">
-      <h2 class="page-headline">Por que usar o Holerite Online?</h2>
-    </div>
-
-    <div class="inner-page row">
-      <ul class="features list-inline">
-        <li>
-          <h3><i class="fa fa-arrow-down"></i> Reduza Custos</h3>
-			<p>Imprimir holerite nunca mais, envelopar holerites nunca mais! Reduza custos já!</p>
-			<p>Diminuia o arquivamento de documentos físicos agora mesmo.</p>
-        	<a href="#contact" class="scroll btn btn-primary btn-centered">Saiba mais</a>
-        </li>
-        <li>
-          <h3><i class="fa fa-thumbs-o-up"></i> Simplicidade</h3>
-          	<p>Os funcionários podem acessar seus holerites direto pelo celular, tablet ou computador.</p>
-		  	<p>Dispensa a assinatura do funcionario no holerite.</p>
-        	<a href="#contact" class="scroll btn btn-primary btn-centered">Saiba mais</a>
-        </li>
-        <li>
-			<h3><i class="fa fa-shield"></i> Segurança</h3>
-			<p>Mais segurança para seus funcionários, sem intermediarios na entrega dos holerites.</p>
-			<p>Dados armazenados por 6 anos, em 3 data centers diferentes no mundo.</p>
-        	<a href="#contact" class="scroll btn btn-primary btn-centered">Saiba mais</a>
-        </li>
-      </ul>
-    </div>
-	  
-	<hr>	  
-
-    <div class="row inner-page">
-      <div class="col-md-6 lazy-container">
-        <img class="figurette lazy" alt="Funciona em qualquer lugar" src="img/pixel.png" data-original="img/responsive-vectors.png" />
-      </div>
-      <div class="col-md-6">
-        <h3>Holerite Online é Empresa Sustentável</h3>
-        <p class="lead">Seus funcionários pode acessar de onde e quando precisarem.</p>
-        <ul class="list-wide">
-			<li><i class="fa fa-check"></i> Acesse pelo Computador, Tablet ou Celular</li>
-			<li><i class="fa fa-check"></i> Acompanhe a evolução salarial</li>
-			<li><i class="fa fa-check"></i> Dados seguros por até 5 anos</li>
-			<li><i class="fa fa-check"></i> Reduza os custos com papel e tempo</li>
-        </ul>
-      </div>
-    </div>
-	  
-  </div>
-
-  <!-- Clients page -->
-  <div id="clients" class="page color-3">
-    <div class="inner-page">
-		<h2 class="page-headline">Quem já está usando?</h2>
+	<!-- Home Page -->
+	<div id="home" class="page color-1">
+		<div class="inner-page">
+			<h2 class="page-headline large">Sua Empresa com Holerite Online</h2>
+		</div>
+		<div class="row inner-page">
+			<div class="col-md-8 col-md-push-4 lazy-container">
+				<img class="lazy" alt="Fica ótimo em qualquer aparelho." src="img/pixel.png" data-original="img/home.png" />
+			</div>
+			<div class="col-md-4 col-md-pull-8">
+				<ul class="big-list">
+					<li>
+						<i class="fa fa-arrow-down"></i>&nbsp;Custos reduzidos</li>
+					<li>
+						<i class="fa fa-thumbs-o-up"></i>&nbsp;Mais tempo livre</li>
+					<li>
+						<i class="fa fa-shield"></i>&nbsp;Mais segurança</li>
+					<li>
+						<i class="fa fa-cloud"></i>&nbsp;Simples e fácil</li>
+				</ul>
+				<br />
+				<a href="#features" title="Veja mais funcionalidades!" class="scroll btn btn-primary btn-centered">
+					<i class="fa fa-caret-down"></i>&nbsp;Saiba mais</a>
+			</div>
+		</div>
 	</div>
-	<div class="inner-page row">
-		<ul class="clients list-inline">
-			<li><img src="img/clients/logo-fepin.png" title="FEPIN Contabilidade"/></li>
-			<li><img src="img/clients/logo-sapore-beneficios.jpg" title="Sapore Benefícios"/></li>
-			<li><img src="img/clients/logo-northempreendimentos.jpg" title="Grupo North Empreendimentos"/></li>
-			<li><img src="img/clients/logo-containit.jpg" title="contain[it]"/></li>
-			<li><img src="img/clients/logo-taginvestimentos.jpg" title="TAG Investimentos"/></li>
-			<li><img src="img/clients/logo-idv.jpg" title="Instituto para Desenvolvimento do Varejo"/></li>
-			<li><img src="img/clients/logo-onyx.png" title="Onyx Equity Management"/></li>
-			<li><img src="img/clients/logo-districomesticos.jpg" title="DistriCosméticos"/></li>
-			<li><img src="img/clients/logo-frutaqui.jpg" title="Frutaqui"/></li>
-			<li><img src="img/clients/logo-artoptions.jpg" title="Art Options"/></li>
-			<li><img src="img/clients/logo-mosaicocapital.jpg" title="Mosaico Capital"/></li>
-			<li><img src="img/clients/logo-bianchi-industry.jpg" title="Bianchi Vending Group"/></li>	
-			<li><img src="img/clients/logo-brdeal.jpg" title="BR Deal"/></li>
-			<li><img src="img/clients/logo-meucosmetico.jpg" title="Meu Cosmético"/></li>
-			<li><img src="img/clients/logo-fariaseg.jpg" title="FariaSeg"/></li>			
-			<li><img src="img/clients/logo-suaempresa.png" title="Seja nosso cliente, traga Sua empresa!"/></li>
-		</ul> 
+	<!-- /#home -->
+
+	<!-- Sign up -->
+	<div class="sign-up color-2 visible-lg">
+		<div class="row inner-page">
+			<div class="col-md-12">
+				<h4 class="pull-left">Mais agilidade, segurança e sustentabilidade para sua empresa.</h4>
+				<a href="#features" class="scroll btn btn-primary pull-right" title="Check out more freatures!">
+					<i class="fa fa-caret-down"></i>&nbsp;Saiba mais</a>
+			</div>
+		</div>
 	</div>
-	  
-	<hr>	  	  
+	<!-- /.sign-up -->
 
-    <!-- Big laptop -->
-    <div class="row inner-page">
-      <div class="col-md-offset-1 col-md-10">
-        <div class="lazy-container lazy-large btn-container loaded">
-          <div class="btn-container">
-            <img src="img/laptop-blue@2x.png" style="display: inline;">            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> <!-- /#assets -->
-	  
-  <!-- Contact page -->
-  <div id="contact" class="page color-2">
-    <div class="inner-page">
-      <h2 class="page-headline">Entre em contato conosco</h2>
-    </div>
-    <div class="row inner-page contact">
-      <div class="col-md-6">
-        <h3>Quer uma proposta?</h3>
-        <form id="contact-form">
-          <textarea rows="6" class="form-control" placeholder="Conte-nos um pouco sobre a empresa. Por exemplo cite quantos funcionarios vocês tem? Ou qual o sistema de folha que utilizam?"></textarea>
-          <input type="text" class="form-control" placeholder="Seu@Email.com.br">
-		  <input type="text" class="form-control" placeholder="Seu telefone">
-          <input type="text" class="form-control" placeholder="Seu nome">
-          <button class="btn btn-primary btn-centered">Solicitar proposta</button>
-        </form>
-      </div>
-      <div class="col-md-6">
-        <h3>Precisando de suporte?</h3>
-        <form id="contact-form">
-          <textarea rows="6" class="form-control" placeholder="Qual problema você está enfrentando?"></textarea>
-          <input type="text" class="form-control" placeholder="Seu@Email.com.br">
-		  <input type="text" class="form-control" placeholder="Seu telefone">
-          <input type="text" class="form-control" placeholder="Seu nome">
-          <button class="btn btn-primary btn-centered">Solicitar suporte</button>
-        </form>
-      </div>
-    </div>
-  </div> <!-- /#contact -->
+	<!-- Feature page-->
+	<div id="features" class="page color-4">
+		<div class="inner-page">
+			<h2 class="page-headline">Por que usar o Holerite Online?</h2>
+		</div>
 
-  <!-- The footer, social media icons, and copyright -->
-  <footer class="page color-5">
-    <div class="inner-page row">
-      <div class="col-md-5 social">
-        <a href="http://facebook.com/pages/Conube/327591964015870/"><i class="fa fa-facebook-square"></i></a>
-        <a href="http://youtube.com/conubeweb"><i class="fa fa-youtube-square"></i></a>
-        <a href="https://twitter.com/conubeweb"><i class="fa fa-twitter"></i></a>
-        <a href="https://github.com/conube"><i class="fa fa-github-square"></i></a> 
-      </div>
-      <div class="col-md-7 text-right copyright">
-         &copy; 2012 - 2013 <a href="http://conube.com.br" title="Conube">Conube</a> | todos os direitos reservados | <a href="#top" title="Vá para o topo" class="scroll">Ir para topo <i class="fa fa-caret-up"></i></a>
-      </div>
-    </div>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>
-  if (typeof jQuery == 'undefined') {
-    document.write(unescape("%3Cscript src='js/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
-  }
-  </script>
+		<div class="inner-page row">
+			<ul class="features list-inline">
+				<li>
+					<h3>
+						<i class="fa fa-arrow-down"></i>&nbsp;Reduza Custos</h3>
+					<p>Imprimir holerite nunca mais, envelopar holerites nunca mais! Reduza custos já!</p>
+					<p>Diminuia o arquivamento de documentos físicos agora mesmo.</p>
+					<a href="#contact" class="scroll btn btn-primary btn-centered">Solicitar proposta</a>
+				</li>
+				<li>
+					<h3>
+						<i class="fa fa-thumbs-o-up"></i>&nbsp;Simplicidade</h3>
+					<p>Os funcionários podem acessar seus holerites direto pelo celular, tablet ou computador.</p>
+					<p>Dispensa a assinatura do funcionario no holerite.</p>
+					<a href="#contact" class="scroll btn btn-primary btn-centered">Solicitar proposta</a>
+				</li>
+				<li>
+					<h3>
+						<i class="fa fa-shield"></i>&nbsp;Segurança</h3>
+					<p>Mais segurança para seus funcionários, sem intermediarios na entrega dos holerites.</p>
+					<p>Dados armazenados por 6 anos, em 3 data centers diferentes no mundo.</p>
+					<a href="#contact" class="scroll btn btn-primary btn-centered">Solicitar proposta</a>
+				</li>
+			</ul>
+		</div>
 
-  <!-- JQUERY END -->
+		<hr>
 
-  <!-- Minimize in production. -->
+		<div class="row inner-page">
+			<div class="col-md-6 lazy-container">
+				<img class="figurette lazy" alt="Funciona em qualquer lugar" src="img/pixel.png" data-original="img/responsive-vectors.png" />
+			</div>
+			<div class="col-md-6">
+				<h3>Holerite Online é Empresa Sustentável</h3>
+				<p class="lead">Seus funcionários pode acessar de onde e quando precisarem.</p>
+				<ul class="list-wide">
+					<li>
+						<i class="fa fa-check"></i>&nbsp;Acesse pelo Computador, Tablet ou Celular</li>
+					<li>
+						<i class="fa fa-check"></i>&nbsp;Acompanhe a evolução salarial</li>
+					<li>
+						<i class="fa fa-check"></i>&nbsp;Dados seguros por até 5 anos</li>
+					<li>
+						<i class="fa fa-check"></i>&nbsp;Reduza os custos com papel e tempo</li>
+				</ul>
+			</div>
+		</div>
 
-  <script src="js/bootstrap.js"></script>
- 
-  <script src="js/lazyload.js"></script>
-  <script src="js/spin.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/lightbox.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/jquery.history.js"></script>
+	</div>
 
-    <!-- Main js fail. -->
-  <script src="js/main.js"></script>
+	<!-- Clients page -->
+	<div id="clients" class="page color-3">
+		<div class="inner-page">
+			<h2 class="page-headline">Quem já está usando?</h2>
+		</div>
+		<div class="inner-page row">
+			<ul class="clients list-inline">
+				<li>
+					<img src="img/clients/logo-fepin.png" title="FEPIN Contabilidade" />
+				</li>
+				<li>
+					<img src="img/clients/logo-sapore-beneficios.jpg" title="Sapore Benefícios" />
+				</li>
+				<li>
+					<img src="img/clients/logo-northempreendimentos.jpg" title="Grupo North Empreendimentos" />
+				</li>
+				<li>
+					<img src="img/clients/logo-containit.jpg" title="contain[it]" />
+				</li>
+				<li>
+					<img src="img/clients/logo-taginvestimentos.jpg" title="TAG Investimentos" />
+				</li>
+				<li>
+					<img src="img/clients/logo-idv.jpg" title="Instituto para Desenvolvimento do Varejo" />
+				</li>
+				<li>
+					<img src="img/clients/logo-onyx.png" title="Onyx Equity Management" />
+				</li>
+				<li>
+					<img src="img/clients/logo-districomesticos.jpg" title="DistriCosméticos" />
+				</li>
+				<li>
+					<img src="img/clients/logo-frutaqui.jpg" title="Frutaqui" />
+				</li>
+				<li>
+					<img src="img/clients/logo-artoptions.jpg" title="Art Options" />
+				</li>
+				<li>
+					<img src="img/clients/logo-mosaicocapital.jpg" title="Mosaico Capital" />
+				</li>
+				<li>
+					<img src="img/clients/logo-bianchi-industry.jpg" title="Bianchi Vending Group" />
+				</li>
+				<li>
+					<img src="img/clients/logo-brdeal.jpg" title="BR Deal" />
+				</li>
+				<li>
+					<img src="img/clients/logo-meucosmetico.jpg" title="Meu Cosmético" />
+				</li>
+				<li>
+					<img src="img/clients/logo-fariaseg.jpg" title="FariaSeg" />
+				</li>
+				<li>
+					<img src="img/clients/logo-suaempresa.png" title="Seja nosso cliente, traga Sua empresa!" />
+				</li>
+			</ul>
+		</div>
+
+		<hr>
+
+		<!-- Big laptop -->
+		<div class="row inner-page">
+			<div class="col-md-offset-1 col-md-10">
+				<div class="lazy-container lazy-large btn-container loaded">
+					<div class="btn-container">
+						<img src="img/laptop-blue@2x.png" style="display: inline;">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /#assets -->
+
+	<!-- Contact page -->
+	<div id="contact" class="page color-2">
+		<div class="inner-page">
+			<h2 class="page-headline">Entre em contato conosco</h2>
+		</div>
+		<div class="row inner-page contact">
+			<div class="col-md-6">
+				<h3>Quer uma proposta?</h3>
+				<form id="contact-form">
+					<input type="text" class="form-control" placeholder="Quantidade de funcionários?">
+					<input type="text" class="form-control" placeholder="Qual nome do Sistema de folha?">
+					<input type="text" class="form-control" placeholder="Seu@Email.com.br">
+					<input type="text" class="form-control" placeholder="Seu telefone" data-mask="(99) 9999-99999">
+					<input type="text" class="form-control" placeholder="Seu nome">
+					<button class="btn btn-primary btn-centered">Solicitar proposta</button>
+				</form>
+			</div>
+			<div class="col-md-6">
+				<h3>Precisando de suporte?</h3>
+				<form id="contact-form">
+					<textarea rows="4" class="form-control" placeholder="Qual problema você está enfrentando?"></textarea>
+					<input type="text" class="form-control" placeholder="Seu@Email.com.br">
+					<input type="text" class="form-control" placeholder="Seu telefone" data-mask="(99) 9999-99999">
+					<input type="text" class="form-control" placeholder="Seu nome">
+					<button class="btn btn-primary btn-centered">Solicitar suporte</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- /#contact -->
+
+	<!-- The footer, social media icons, and copyright -->
+	<footer class="page color-5">
+		<div class="inner-page row">
+			<div class="col-md-5 social">
+				<a href="http://facebook.com/pages/Conube/327591964015870/">
+					<i class="fa fa-facebook-square"></i>
+				</a>
+				<a href="http://youtube.com/conubeweb">
+					<i class="fa fa-youtube-square"></i>
+				</a>
+				<a href="https://twitter.com/conubeweb">
+					<i class="fa fa-twitter"></i>
+				</a>
+				<a href="https://github.com/conube">
+					<i class="fa fa-github-square"></i>
+				</a>
+			</div>
+			<div class="col-md-7 text-right copyright">
+				&copy; 2012
+				<a href="http://conube.com.br" title="Conube">Conube</a>| todos os direitos reservados |
+				<a href="#top" title="Vá para o topo" class="scroll">Ir para topo
+					<i class="fa fa-caret-up"></i>
+				</a>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		if (typeof jQuery == 'undefined') {
+			document.write(unescape("%3Cscript src='js/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+		}
+	</script>
+
+	<!-- Minimize in production. -->
+	<script src="js/bootstrap.js"></script>
+	<script src="js/lazyload.js"></script>
+	<script src="js/spin.js"></script>
+	<script src="js/lightbox.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery.history.js"></script>
+
+	<!-- Main js fail. -->
+	<script src="js/main.js"></script>
 </body>
+
 </html>

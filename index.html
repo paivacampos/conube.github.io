@@ -146,14 +146,17 @@
 			<div class="col-md-5">
 				<h4><b>Seja legal</b>, inscreva-se e fique sabendo das novidades</h4>
 			</div>
+			<form action="http://conube.us3.list-manage.com/subscribe/post?u=fc49f9d35b86cb24029ed29ea&amp;id=bff119875e" method="post" class="validate" target="_blank" novalidate>
 			<div class="col-md-5">
 				<input type="email" placeholder="Seu@Email.com.br" name="EMAIL" class="subscribe">
 			</div>
 			<div class="col-md-2">
 				<button type="submit" class="btn btn-primary pull-right btn-block">Inscrever-se</button>
 			</div>
+			</form>
 		</div>
 	</div>
+	
 	<!-- /newsletter -->
 
 	<!-- Contact page -->
@@ -164,22 +167,22 @@
 		<div class="row inner-page contact">
 			<div class="col-md-6">
 				<h3>Quer transferir sua empresa?</h3>
-				<form id="contact-form" action="http://getsimpleform.com/messages?form_api_token=a30b1cd07d26cfcc67ed2181069ad08c" method="post">
-					<input type='hidden' name='redirect_to' value='http://conube.github.com/obrigado-transferencia.html' />
-					<input type="text" class="form-control" placeholder="Seu telefone (DDD + Número)" data-mask="(99) 9999-99999">
-					<input type="text" class="form-control" placeholder="Seu@Email.com.br">
-					<input type="text" class="form-control" placeholder="Seu nome completo">
-					<button class="btn btn-primary btn-centered">Transferir empresa</button>
+				<form id="transferir-form">
+					<input type="hidden" id="assunto" value="Transferir empresa" />
+					<input type="text" id='telefone' class="form-control" placeholder="Seu telefone (DDD + Número)" data-mask="(99) 9999-99999">
+					<input type="text" id='email' class="form-control" placeholder="Seu@Email.com.br">
+					<input type="text" id='nome' class="form-control" placeholder="Seu nome completo">
+					<button type="submit"  class="btn btn-primary btn-centered">Transferir empresa</button>
 				</form>
 			</div>
 			<div class="col-md-6">
 				<h3>Quer abrir sua empresa?</h3>
-				<form id="contact-form" action="http://getsimpleform.com/messages?form_api_token=a30b1cd07d26cfcc67ed2181069ad08c" method="post">
-					<input type="text" class="form-control" placeholder="Seu telefone (DDD + Número)" data-mask="(99) 9999-99999">
-					<input type='hidden' name='redirect_to' value='http://conube.github.com/obrigado-abertura.html' />
-					<input type="text" class="form-control" placeholder="Seu@Email.com.br">
-					<input type="text" class="form-control" placeholder="Seu nome completo">
-					<button class="btn btn-primary btn-centered">Abrir empresa</button>
+				<form id="abrir-form">
+					<input type="hidden" id="assunto" value="Abrir empresa" />
+					<input type="text" id='telefone' class="form-control" placeholder="Seu telefone (DDD + Número)" data-mask="(99) 9999-99999">					
+					<input type="text" id='email' class="form-control" placeholder="Seu@Email.com.br">
+					<input type="text" id='nome' class="form-control" placeholder="Seu nome completo">
+					<button type="submit" class="btn btn-primary btn-centered">Abrir empresa</button>
 				</form>
 			</div>
 		</div>
@@ -212,19 +215,15 @@
 			</div>
 		</div>
 	</footer>
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script>
 		if (typeof jQuery == 'undefined') {
 			document.write(unescape("%3Cscript src='js/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
 		}
 	</script>
-
-	<!-- JQUERY END -->
-
+	
 	<!-- Minimize in production. -->
-
-	<script src="js/bootstrap.js"></script>
-
 	<script src="js/lazyload.js"></script>
 	<script src="js/spin.js"></script>
 	<script src="js/bootstrap.js"></script>
