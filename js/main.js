@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-    // Add spin.js to lazy load container
+	
+  // Add spin.js to lazy load container
   // History, and back button
 
   $(function() {
@@ -113,4 +114,19 @@ $(document).ready(function() {
         if ($('.navbar-toggle').is(":visible"))
         $("#nav-collapse").removeClass("in").addClass("collapse");
     });
+	
+	// mask forms
+	if ($('[data-mask]').length) {					
+		$('[data-mask]').each(function() {			
+			
+			$this = $(this);
+			var mask = $this.attr('data-mask') || 'error...',
+				mask_placeholder = $this.attr('data-mask-placeholder') || '_';
+			
+			$this.mask(mask, {
+				placeholder : mask_placeholder
+			});
+			
+		})
+	}
 });
