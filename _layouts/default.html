@@ -1,0 +1,31 @@
+---
+title: 'Gabriel Marquez Blog'
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% if page.url != '/blog/' %}Gabriel Marquez |{% endif %} {{page.title}}</title>
+  <meta charset='UTF-8'/>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <link rel='alternate' type='application/rss+xml' title='RSS' href='/blog.rss' />
+  <link rel='shortcut icon' href='/img/favicon.ico' type='image/x-icon' />
+  <link href='/css/blog.css' rel='stylesheet' />
+</head>
+<body>
+  <div class='container'>
+    <div class='col12 clearfix'>
+      <div class='header col6 margin3 pad4h'>
+        <div class='clearfix col12'>
+          <div class='menu fr'>
+			<a class='{% if page.url == "/" %}active{% endif %}' href='/'>Home</a>
+            <a class='{% if page.section == "blog" %}active{% endif %}' href='/blog'>Blog</a>
+            <a class='{% if page.url == "/about/" %}active{% endif %}' href='/about'>About</a>
+          </div>
+          <h1 class='title'><a href='/blog'>{{page.title}}</a></h1>
+        </div>
+      </div>
+    </div>
+    {{content}}
+  </div>
+  <script src='/js/site.js'></script>
+</body>

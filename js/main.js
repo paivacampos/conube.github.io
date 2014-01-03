@@ -1,5 +1,30 @@
+(function ($) {
+	$.extend($.validator.messages, {
+		required: "Este campo &eacute; requerido.",
+		remote: "Por favor, corrija este campo.",
+		email: "Por favor, forne&ccedil;a um endere&ccedil;o eletr&ocirc;nico v&aacute;lido.",
+		url: "Por favor, forne&ccedil;a uma URL v&aacute;lida.",
+		date: "Por favor, forne&ccedil;a uma data v&aacute;lida.",
+		dateISO: "Por favor, forne&ccedil;a uma data v&aacute;lida (ISO).",
+		number: "Por favor, forne&ccedil;a um n&uacute;mero v&aacute;lido.",
+		digits: "Por favor, forne&ccedil;a somente d&iacute;gitos.",
+		creditcard: "Por favor, forne&ccedil;a um cart&atilde;o de cr&eacute;dito v&aacute;lido.",
+		equalTo: "Por favor, forne&ccedil;a o mesmo valor novamente.",
+		accept: "Por favor, forne&ccedil;a um valor com uma extens&atilde;o v&aacute;lida.",
+		maxlength: $.validator.format("Por favor, forne&ccedil;a n&atilde;o mais que {0} caracteres."),
+		minlength: $.validator.format("Por favor, forne&ccedil;a ao menos {0} caracteres."),
+		rangelength: $.validator.format("Por favor, forne&ccedil;a um valor entre {0} e {1} caracteres de comprimento."),
+		range: $.validator.format("Por favor, forne&ccedil;a um valor entre {0} e {1}."),
+		max: $.validator.format("Por favor, forne&ccedil;a um valor menor ou igual a {0}."),
+		min: $.validator.format("Por favor, forne&ccedil;a um valor maior ou igual a {0}.")
+	});
+}(jQuery));
+
 $(document).ready(function () {
 
+	// Google Analytics
+	ga('create', 'UA-39975045-1', 'conube.com.br');
+	ga('send', 'pageview');
 
 	// Add spin.js to lazy load container
 	// History, and back button
@@ -130,23 +155,48 @@ $(document).ready(function () {
 		})
 	}
 	
-	$( "form" ).submit(function( event ) {
-		
-		$.ajax({
-			dataType: 'jsonp',
-			url: "http://getsimpleform.com/messages/ajax?form_api_token=a30b1cd07d26cfcc67ed2181069ad08c",
-			data: {
-				assunto: $("#"+event.target.id+" #assunto").val(),
-				nome: $("#"+event.target.id+" #nome").val(),
-				telefone: $("#"+event.target.id+" #telefone").val(),			
-				email: $("#"+event.target.id+" #email").val()
-			}
-		}).done(function () {
-			event.preventDefault();
-			$(event.target)[0].reset();
-			alert("Obrigado pelo contato! Aguarde nosso retorno em breve.");
-		});		
-		
+	$("form").validate();
+	
+	$("#transferir-form").validate({
+		submitHandler: function( event ) {			
+			var id = event.id;
+			$("#"+id+" #nome").val()
+			
+			$.ajax({
+				dataType: 'jsonp',
+				url: "http://getsimpleform.com/messages/ajax?form_api_token=a30b1cd07d26cfcc67ed2181069ad08c",
+				data: {
+					assunto: $("#"+id+" #assunto").val(),
+					nome: $("#"+id+" #nome").val(),
+					telefone: $("#"+id+" #telefone").val(),			
+					email: $("#"+id+" #email").val()
+				}
+			}).done(function () {
+				$(event)[0].reset();
+				alert("Obrigado pelo contato! Aguarde nosso retorno em breve.");
+			});
+		}
+	});
+	
+	$("#abrir-form").validate({
+		submitHandler: function( event ) {		
+			var id = event.id;
+			$("#"+id+" #nome").val()
+			
+			$.ajax({
+				dataType: 'jsonp',
+				url: "http://getsimpleform.com/messages/ajax?form_api_token=a30b1cd07d26cfcc67ed2181069ad08c",
+				data: {
+					assunto: $("#"+id+" #assunto").val(),
+					nome: $("#"+id+" #nome").val(),
+					telefone: $("#"+id+" #telefone").val(),			
+					email: $("#"+id+" #email").val()
+				}
+			}).done(function () {
+				$(event)[0].reset();
+				alert("Obrigado pelo contato! Aguarde nosso retorno em breve.");
+			});
+		}
 	});
 	
 });

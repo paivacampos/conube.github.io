@@ -25,7 +25,7 @@
 			if (_last !== url) {
 
 				_last = location.hash = url;
-
+ 
 				// Si se trata de IE6/IE7
 
 				if (_ie67) {

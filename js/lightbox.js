@@ -2029,7 +2029,7 @@ $.magnificPopup.registerModule(RETINA_NS, {
 					callback();
 				}
 			});
-		});
+		}); 
 	};
 
 	$.fn.destroyMfpFastClick = function() {

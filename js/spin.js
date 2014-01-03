@@ -34,14 +34,14 @@
     return el
   }
 
-  /**
+  /** 
    * Appends children and returns the parent.
    */
   function ins(parent /* child1, child2, ...*/) {
     for (var i=1, n=arguments.length; i<n; i++)
       parent.appendChild(arguments[i])
 
-    return parent
+    return parent 
   }
 
   /**

@@ -199,7 +199,7 @@
         } else {
             fold = $(settings.container).offset().left;
         }
-
+ 
         return fold >= $(element).offset().left + settings.threshold + $(element).width();
     };
 
