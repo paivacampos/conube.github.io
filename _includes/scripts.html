@@ -1,8 +1,12 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>
-	if (typeof jQuery == 'undefined') {
-		document.write(unescape("%3Cscript src='/js/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
-	}
+<script>	
+	head.load("https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", 
+			   "/js/bundle.min.js",
+			   "/js/main.min.js");
+	head.ready(function () {
+					if (typeof jQuery == 'undefined') {
+						head.load("/js/jquery-1.9.1.min.js");
+					}
+			   });
 </script>
-<script src="/js/bundle.js"></script>
-<script src="/js/main.js"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open Sans:300,400,700.css">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
