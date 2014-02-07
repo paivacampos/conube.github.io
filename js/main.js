@@ -1,10 +1,6 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
-	// Google Analytics
-	ga('create', 'UA-39975045-1', 'conube.com.br');
-	ga('send', 'pageview');
-
-	(function ($) {
+	(function($) {
 		$.extend($.validator.messages, {
 			required: "Este campo &eacute; requerido.",
 			remote: "Por favor, corrija este campo.",
@@ -29,9 +25,9 @@ $(document).ready(function () {
 	// Add spin.js to lazy load container
 	// History, and back button
 
-	$(function () {
+	$(function() {
 		jQuery.history.listen()
-		$('.nav .scroll').click(function () {
+		$('.nav .scroll').click(function() {
 			$.history.push('index.html' + $(this).attr('href'));
 		});
 	});
@@ -49,11 +45,11 @@ $(document).ready(function () {
 		// Change this for fade in speed
 		effectspeed: 600,
 		//  Hide spinner when loaded
-		load: function (elements_left, settings) {
+		load: function(elements_left, settings) {
 			$(".lazy-container").has(this).addClass('loaded');
 			$(".loaded .spinner").remove();
 			// refresh bootstrap scrollspy, when image is loaded
-			$('[data-spy="scroll"]').each(function () {
+			$('[data-spy="scroll"]').each(function() {
 				var $spy = $(this).scrollspy('refresh')
 			});
 		}
@@ -63,7 +59,7 @@ $(document).ready(function () {
 
 	$('.lightbox').magnificPopup({
 		type: 'image',
-		disableOn: function () {
+		disableOn: function() {
 			// Detect here whether you want to show the popup
 			// return true if you want
 			if ($(window).width() < 500) {
@@ -78,10 +74,10 @@ $(document).ready(function () {
 		removalDelay: 300,
 		mainClass: 'mfp-fade',
 		callbacks: {
-			open: function () {
+			open: function() {
 				$('.navbar').fadeOut('slow');
 			},
-			close: function () {
+			close: function() {
 				$('.navbar').fadeIn('slow');
 			}
 		}
@@ -92,7 +88,7 @@ $(document).ready(function () {
 	$(' .iframe').magnificPopup({
 		type: 'iframe',
 		mainClass: 'mfp-fad',
-		disableOn: function () {
+		disableOn: function() {
 			if ($(window).width() < 500) {
 				return false;
 			}
@@ -101,10 +97,10 @@ $(document).ready(function () {
 		preloader: true,
 
 		callbacks: {
-			open: function () {
+			open: function() {
 				$('.navbar').fadeOut('slow');
 			},
-			close: function () {
+			close: function() {
 				$('.navbar').fadeIn('slow');
 			}
 		}
@@ -112,13 +108,13 @@ $(document).ready(function () {
 
 	// .scroll class for link scrolling.
 
-	$('.scroll[href^="#"]').bind('click.smoothscroll', function (e) {
+	$('.scroll[href^="#"]').bind('click.smoothscroll', function(e) {
 		e.preventDefault();
 		var target = this.hash;
 		$target = $(target);
 		$('html, body').stop().animate({
 			'scrollTop': $target.offset().top
-		}, 900, 'swing', function () {
+		}, 900, 'swing', function() {
 			window.location.hash = target;
 		});
 
@@ -126,23 +122,23 @@ $(document).ready(function () {
 
 	// Change icons on accardion
 
-	$('.collapse').on('show.bs.collapse', function () {
+	$('.collapse').on('show.bs.collapse', function() {
 		$(this).parent().find(".fa-plus").removeClass("fa-plus").addClass("fa-minus");
 		$(this).parent().find(".panel-heading").addClass("active");
-	}).on('hide.bs.collapse', function () {
+	}).on('hide.bs.collapse', function() {
 		$(this).parent().find(".fa-minus").removeClass("fa-minus").addClass("fa-plus");
 		$(this).parent().find(".panel-heading").removeClass("active");
 	});
 
 	// Close menu when in mobile view clicked
-	$('.nav .scroll').click(function (e) {
+	$('.nav .scroll').click(function(e) {
 		if ($('.navbar-toggle').is(":visible"))
 			$("#nav-collapse").removeClass("in").addClass("collapse");
 	});
 
 	// mask forms
 	if ($('[data-mask]').length) {
-		$('[data-mask]').each(function () {
+		$('[data-mask]').each(function() {
 
 			$this = $(this);
 			var mask = $this.attr('data-mask') || 'error...',
@@ -154,49 +150,49 @@ $(document).ready(function () {
 
 		})
 	}
-	
+
 	$("form").validate();
-	
+
 	$("#transferir-form").validate({
-		submitHandler: function( event ) {			
+		submitHandler: function(event) {
 			var id = event.id;
-			$("#"+id+" #nome").val()
-			
+			$("#" + id + " #nome").val()
+
 			$.ajax({
 				dataType: 'jsonp',
 				url: "http://getsimpleform.com/messages/ajax?form_api_token=a30b1cd07d26cfcc67ed2181069ad08c",
 				data: {
-					assunto: $("#"+id+" #assunto").val(),
-					nome: $("#"+id+" #nome").val(),
-					telefone: $("#"+id+" #telefone").val(),			
-					email: $("#"+id+" #email").val()
+					assunto: $("#" + id + " #assunto").val(),
+					nome: $("#" + id + " #nome").val(),
+					telefone: $("#" + id + " #telefone").val(),
+					email: $("#" + id + " #email").val()
 				}
-			}).done(function () {
+			}).done(function() {
 				$(event)[0].reset();
 				alert("Obrigado pelo contato! Aguarde nosso retorno em breve.");
 			});
 		}
 	});
-	
+
 	$("#abrir-form").validate({
-		submitHandler: function( event ) {		
+		submitHandler: function(event) {
 			var id = event.id;
-			$("#"+id+" #nome").val()
-			
+			$("#" + id + " #nome").val()
+
 			$.ajax({
 				dataType: 'jsonp',
 				url: "http://getsimpleform.com/messages/ajax?form_api_token=a30b1cd07d26cfcc67ed2181069ad08c",
 				data: {
-					assunto: $("#"+id+" #assunto").val(),
-					nome: $("#"+id+" #nome").val(),
-					telefone: $("#"+id+" #telefone").val(),			
-					email: $("#"+id+" #email").val()
+					assunto: $("#" + id + " #assunto").val(),
+					nome: $("#" + id + " #nome").val(),
+					telefone: $("#" + id + " #telefone").val(),
+					email: $("#" + id + " #email").val()
 				}
-			}).done(function () {
+			}).done(function() {
 				$(event)[0].reset();
 				alert("Obrigado pelo contato! Aguarde nosso retorno em breve.");
 			});
 		}
 	});
-	
+
 });
