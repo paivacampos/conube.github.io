@@ -162,10 +162,10 @@ $(document).ready(function() {
 				dataType: 'jsonp',
 				url: "http://getsimpleform.com/messages/ajax?form_api_token=a30b1cd07d26cfcc67ed2181069ad08c",
 				data: {
-					assunto: $("#" + id + " #assunto").val(),
-					nome: $("#" + id + " #nome").val(),
-					telefone: $("#" + id + " #telefone").val(),
-					email: $("#" + id + " #email").val()
+					assunto: $("#" + id + " #tassunto").val(),
+					nome: $("#" + id + " #tnome").val(),
+					telefone: $("#" + id + " #ttelefone").val(),
+					email: $("#" + id + " #temail").val()
 				}
 			}).done(function() {
 				$(event)[0].reset();
@@ -183,10 +183,10 @@ $(document).ready(function() {
 				dataType: 'jsonp',
 				url: "http://getsimpleform.com/messages/ajax?form_api_token=a30b1cd07d26cfcc67ed2181069ad08c",
 				data: {
-					assunto: $("#" + id + " #assunto").val(),
-					nome: $("#" + id + " #nome").val(),
-					telefone: $("#" + id + " #telefone").val(),
-					email: $("#" + id + " #email").val()
+					assunto: $("#" + id + " #aassunto").val(),
+					nome: $("#" + id + " #anome").val(),
+					telefone: $("#" + id + " #atelefone").val(),
+					email: $("#" + id + " #aemail").val()
 				}
 			}).done(function() {
 				$(event)[0].reset();
