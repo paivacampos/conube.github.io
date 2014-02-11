@@ -1,16 +1,19 @@
 <script>	
 
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-39975045-1']);
-	_gaq.push(['_trackPageview']);
+	head.load("https://google-analytics.com/analytics.js",
+			  "https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", 
+			  "/js/bundle.min.js",
+			  "/js/main.min.js");
 
-	head.load("https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", 
-			  "https://stats.g.doubleclick.net/dc.js",
-			   "/js/bundle.min.js",
-			   "/js/main.min.js");
 	head.ready(function () {
 					if (typeof jQuery == 'undefined') {
 						head.load("/js/jquery-1.9.1.min.js");
 					}
+
+					ga('create', 'UA-39975045-1', 'auto', {'allowLinker': true});
+					ga('require', 'linker');
+					ga('linker:autoLink', ['app.conube.com.br']);
+					ga('send', 'pageview');
+
 			   });
 </script>
