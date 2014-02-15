@@ -155,17 +155,14 @@ $(document).ready(function() {
 
 	$("#transferir-form").validate({
 		submitHandler: function(event) {
-			var id = event.id;
-			$("#" + id + " #nome").val()
-
 			$.ajax({
 				dataType: 'jsonp',
 				url: "http://getsimpleform.com/messages/ajax?form_api_token=a30b1cd07d26cfcc67ed2181069ad08c",
 				data: {
-					assunto: $("#" + id + " #tassunto").val(),
-					nome: $("#" + id + " #tnome").val(),
-					telefone: $("#" + id + " #ttelefone").val(),
-					email: $("#" + id + " #temail").val()
+					assunto: $("#tassunto").val(),
+					nome: $("#tnome").val(),
+					telefone: $("#ttelefone").val(),
+					email: $("#temail").val()
 				}
 			}).done(function() {
 				$(event)[0].reset();
@@ -176,17 +173,14 @@ $(document).ready(function() {
 
 	$("#abrir-form").validate({
 		submitHandler: function(event) {
-			var id = event.id;
-			$("#" + id + " #nome").val()
-
 			$.ajax({
 				dataType: 'jsonp',
 				url: "http://getsimpleform.com/messages/ajax?form_api_token=a30b1cd07d26cfcc67ed2181069ad08c",
 				data: {
-					assunto: $("#" + id + " #aassunto").val(),
-					nome: $("#" + id + " #anome").val(),
-					telefone: $("#" + id + " #atelefone").val(),
-					email: $("#" + id + " #aemail").val()
+					assunto: $("#aassunto").val(),
+					nome: $("#anome").val(),
+					telefone: $("#atelefone").val(),
+					email: $("#aemail").val()
 				}
 			}).done(function() {
 				$(event)[0].reset();
