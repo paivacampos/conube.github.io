@@ -106,6 +106,42 @@ $(document).ready(function() {
 		}
 	});
 
+	$('.nav li a').on('click', function() {
+		ga('send', 'event', 'button', 'click', 'nav', $(this).text());
+	});
+
+	$('#home a').on('click', function() {
+		ga('send', 'event', 'button', 'click', 'action', 'Experimente land');
+	});
+
+	$('.sing-up a').on('click', function() {
+		ga('send', 'event', 'button', 'click', 'action', 'Experimente banner');
+	});
+
+	$('#funcionalidades a').on('click', function() {
+		ga('send', 'event', 'button', 'click', 'action', $(this).text());
+	});
+
+	$('.newsletter button').on('click', function() {
+		ga('send', 'event', 'button', 'click', 'action', $(this).text());
+	});
+
+	$('#contact button').on('click', function() {
+		ga('send', 'event', 'button', 'click', 'form-action', $(this).text());
+	});
+
+	$('footer .social .fa-facebook-square').on('click', function() {
+		ga('send', 'event', 'button', 'click', 'social', 'facebook');
+	});
+
+	$('footer .social .fa-youtube-square').on('click', function() {
+		ga('send', 'event', 'button', 'click', 'social', 'youtube');
+	});
+
+	$('footer .social .fa-twitter').on('click', function() {
+		ga('send', 'event', 'button', 'click', 'social', 'twitter');
+	});
+
 	// .scroll class for link scrolling.
 
 	$('.scroll[href^="#"]').bind('click.smoothscroll', function(e) {
