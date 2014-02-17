@@ -107,39 +107,39 @@ $(document).ready(function() {
 	});
 
 	$('.nav li a').on('click', function() {
-		ga('send', 'event', 'button', 'click', 'nav', $(this).text());
+		ga('send', 'event', 'menu', 'click', $(this).text());
 	});
 
 	$('#home a').on('click', function() {
-		ga('send', 'event', 'button', 'click', 'action', 'Experimente land');
+		ga('send', 'event', 'action', 'click', 'Experimente land');
 	});
 
 	$('.sing-up a').on('click', function() {
-		ga('send', 'event', 'button', 'click', 'action', 'Experimente banner');
+		ga('send', 'event', 'action', 'click', 'Experimente banner');
 	});
 
 	$('#funcionalidades a').on('click', function() {
-		ga('send', 'event', 'button', 'click', 'action', $(this).text());
+		ga('send', 'event', 'action', 'click', $(this).text());
 	});
 
 	$('.newsletter button').on('click', function() {
-		ga('send', 'event', 'button', 'click', 'action', $(this).text());
+		ga('send', 'event', 'action', 'click', 'newsletter');
 	});
 
 	$('#contact button').on('click', function() {
-		ga('send', 'event', 'button', 'click', 'form-action', $(this).text());
+		ga('send', 'event', 'contact', 'click', $(this).text());
 	});
 
 	$('footer .social .fa-facebook-square').on('click', function() {
-		ga('send', 'event', 'button', 'click', 'social', 'facebook');
+		ga('send', 'event', 'social', 'click', 'facebook');
 	});
 
 	$('footer .social .fa-youtube-square').on('click', function() {
-		ga('send', 'event', 'button', 'click', 'social', 'youtube');
+		ga('send', 'event', 'social', 'click', 'youtube');
 	});
 
 	$('footer .social .fa-twitter').on('click', function() {
-		ga('send', 'event', 'button', 'click', 'social', 'twitter');
+		ga('send', 'event', 'social', 'click', 'twitter');
 	});
 
 	// .scroll class for link scrolling.
