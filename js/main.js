@@ -24,7 +24,6 @@ $(document).ready(function() {
 
 	// Add spin.js to lazy load container
 	// History, and back button
-
 	$(function() {
 		jQuery.history.listen()
 		$('.nav .scroll').click(function() {
@@ -56,7 +55,6 @@ $(document).ready(function() {
 	});
 
 	// Lightbox
-
 	$('.lightbox').magnificPopup({
 		type: 'image',
 		disableOn: function() {
@@ -84,7 +82,6 @@ $(document).ready(function() {
 	});
 
 	// Lightbox video/maps
-
 	$(' .iframe').magnificPopup({
 		type: 'iframe',
 		mainClass: 'mfp-fad',
@@ -142,8 +139,7 @@ $(document).ready(function() {
 		ga('send', 'event', 'social', 'click', 'twitter');
 	});
 
-	// .scroll class for link scrolling.
-
+	// .scroll class for link scrolling
 	$('.scroll[href^="#"]').bind('click.smoothscroll', function(e) {
 		e.preventDefault();
 		var target = this.hash;
@@ -157,7 +153,6 @@ $(document).ready(function() {
 	});
 
 	// Change icons on accardion
-
 	$('.collapse').on('show.bs.collapse', function() {
 		$(this).parent().find(".fa-plus").removeClass("fa-plus").addClass("fa-minus");
 		$(this).parent().find(".panel-heading").addClass("active");
@@ -175,7 +170,6 @@ $(document).ready(function() {
 	// mask forms
 	if ($('[data-mask]').length) {
 		$('[data-mask]').each(function() {
-
 			$this = $(this);
 			var mask = $this.attr('data-mask') || 'error...',
 				mask_placeholder = $this.attr('data-mask-placeholder') || '_';
@@ -183,7 +177,6 @@ $(document).ready(function() {
 			$this.mask(mask, {
 				placeholder: mask_placeholder
 			});
-
 		})
 	}
 
